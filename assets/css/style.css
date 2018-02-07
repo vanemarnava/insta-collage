@@ -8,16 +8,73 @@
 
 /*Estilo fondo iniciar seccion*/
 #init{
-	background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+	/*background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);*/
+	width: 100%;
+  height: 100vh;
+ 	padding-top: 3em;
+  background: -moz-linear-gradient(to bottom left,#60b68a,#cc7b52);
+  background: -webkit-linear-gradient(to bottom left,#60b68a, #cc7b52);
+  background: -o-linear-gradient(to bottom left,#60b68a, #cc7b52);
+  background: linear-gradient(to bottom left,#60b68a, #cc7b52);
+  color: #ffff;
+}
+
+/*estilo inputs*/
+.input-group, #idioma {
+  width: 70%;
+}
+
+.input-group .form-control {
+  margin-bottom: 1em;
+}
+
+#user, #passInput {
+  background-color: #ffffff26;
+  border: none;
+  color: #FFF;
+}
+
+#user::placeholder, #passInput::placeholder {
+  color: #FFF;
+}
+
+/*estilo boton de inicio sesion*/
+#btnSign {
+  color: #FFF;
+  background-color: transparent;
+  font-weight: 600;
+  outline: none;
 }
 
 /*Estilo iniciar secion*/
 #logoIns{
-	width: 50%;
+	width: 35%;
 	height: auto;
-	margin-left: 25%;
+	margin-left: 30%;
 	margin-top: 3em;
+	color: #FFF;
 }
+
+.gettinghelp {
+  margin-top: 2em;
+}
+
+.gettinghelp p a {
+  color: #FFF;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  text-align: center;
+}
+
+.logfb {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+
+
 
 #drop-photos-section{
 	height: 15em;
