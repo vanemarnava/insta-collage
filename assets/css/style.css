@@ -1,0 +1,42 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*Estilo fondo iniciar seccion*/
+#init{
+	background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);
+}
+
+/*Estilo iniciar secion*/
+#logoIns{
+	width: 50%;
+	height: auto;
+	margin-left: 25%;
+	margin-top: 3em;
+}
+
+#drop-photos-section{
+	height: 15em;
+	width: 100%;
+	border: 2px solid red;
+}
+
+.marco-foto {
+  min-height: 15em;
+  border: 2px solid black;
+}
+
+#gellerySection{
+	height: 5em;
+	width: 100%;
+}
+
+img{
+	height: 13em;
+	width: 15em;
+/*	display: inline;*/
+}

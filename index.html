@@ -3,10 +3,61 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insta-collage</title>
+	<!-- enlace bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- enlace estilos css -->
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
-	
+<body id="init">
+<!-- container con idiomas -->
+	<div class="container-fluid ">
+		<div class="row">
+			<div class="col-md-12 idioma">
+				<label id="idioma" for="usr">Idioma:</label>
+				<select id="lenguaje" class="form-control"/>
+				  <option value="Español" id="Español">Español</option>
+				  <option value="english">English</option>
+				  <option value="francais">Français</option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<!-- container con logo -->
+	<div class="container-fluid ">
+		<div class="row">
+			<div class="col-md-12">
+				<img id="logoIns" src="assets/img/logoInstagram.png" alt="logo">
+			</div>
+		</div>
+	</div>
+	<!-- container con inputs -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<form>
+			    <div class="form-group">
+			      <!-- <label for="usr">Name:</label> -->
+			      <input type="text" class="form-control" id="usr">
+			    </div>
+			    <div class="form-group">
+			      <!-- <label for="pwd">Password:</label> -->
+			      <input type="password" class="form-control" id="pwd">
+			    </div>
+			  </form>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid boton">
+		<div class="row">
+			<div class="col-md-12">
+				
+			</div>
+		</div>
+	</div>
+
+	<!-- scripts -->
+	<!-- enlace con app.js -->
+	<script src="assets/js/app.js" ></script>
 	<script src="assets/js/jquery.js"></script><!-- primero carga jquery -->
 	<script src="assets/js/bootstrap.min.js"></script><!-- luego carga el css -->
 </body>
