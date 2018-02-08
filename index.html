@@ -3,20 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Insta-collage</title>
+	<!-- enlace bootstrap -->
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
+	<!-- enlace estilos css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
-<body>
-	<section>
-		<img id="foto1" draggable="true" ondragstart="drag(event)" src="img/jarcor.jpg">
-        <img id="foto2" draggable="true" ondragstart="drag(event)" src="img/foto_0920140822124434.jpg" alt="">
-        <img id="foto3" draggable="true" ondragstart="drag(event)" src="img/i-62869.jpeg" alt="">
-        <img id="foto4" draggable="true" ondragstart="drag(event)" src="img/p3.jpg" alt="">
-	</section>
-	
+<body id="init">
+	<!-- container con logo -->
+	<div class="container-fluid ">
+		<div class="row">
+			<div class="col-md-12">
+				<!-- <img id="logoIns" src="assets/img/instagram.png" alt="logo"> -->
+				<img id="logoIns" src="assets/img/logoInstagram.png" alt="logo">
+			</div>
+		</div>
+	</div>
+	<!-- container con inputs -->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- <div class="col-xs-12 col-md-4 input-group"> -->
+      	<div class="input-group center-block">
+        	<input type="text" id="user" required class="form-control" placeholder="Nombre de usuario" aria-describedby="basic-addon1">
+        	<input type="password" id="passInput" required class="form-control" placeholder="Password" aria-describedby="basic-addon1">
+       		<div class="btn-group btn-group-justified" role="group" aria-label="...">
+          	<div class="btn-group" role="group">
+          		<button type="button" class="btn btn-default" id="btnSign">Iniciar sesión</button>
+          	</div>
+        	</div>
+      	</div>
+			<!-- </div> -->
+		</div>
+	</div>
 
-	<script src="assets/js/app.js"></script>
-	<script src="assets/js/jquery.js"></script><!-- primero carga jquery -->
+	<div class="container-fluid ">
+		<div class="row">
+			<div class="col-xs-12 col-md-4 col-md-offset-4">
+				<div class="gettinghelp">
+	        <p>¿Has olvidado tu información de inicio de sesión? <a href="#">Obtén ayuda</a></p>
+	        <p>o</p>
+	        <p class="logfb"><i class="fab fa-facebook-square"></i> Inicia sesión con Facebook</p>
+	      </div>
+			</div>
+		</div>
+	</div>
+	<!-- scripts -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script><!-- primero carga jquery -->
+	<!-- enlace con app.js -->
+	<script src="assets/js/app.js" ></script>
+	<!-- guardar datos -->
+	<script src="assets/js/datas.js" ></script>
 	<script src="assets/js/bootstrap.min.js"></script><!-- luego carga el css -->
 </body>
 </html>
