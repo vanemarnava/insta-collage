@@ -11,7 +11,7 @@ $(document).ready(function(){
 
 		// la contrasena no debe estar vacia, debe tener mas de 6 caracteres, no debe ser 123456
 		if (passVal !== '' && passVal.length >= 6 && passVal !== '123456') {
-			
+			window.location = 'gallery.html';
 	  } else {
 	    alert('Ingrese contrasena valida.');
 	  }
