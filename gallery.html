@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insta-collage</title>
+	<!-- enlace bootstrap -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- enlace estilos css -->
+	<link rel="stylesheet" href="assets/css/style.css">
+	<!-- fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+<body>
+	
+	<nav class="navbar navbar-inverse phone-panel">
+    <div class="container-fluid">
+      <div class="row">
+      	<div class="col-xs-4"><span class="icons-panel"><i class="fas fa-signal"></i></span><span class="icons-panel"><i class="fas fa-wifi"></i></span></div>
+      	<div class="col-xs-4 text-center"><span>9:00</span></div>
+      	<div class="col-xs-4"><span class="icons-panel"><i class="fas fa-battery-three-quarters pull-right"></i></span></div>
+    	</div>
+  	</div>
+	</nav>
+<!-- seccion de fotos arrastradas -->
+	<section id="cont-drop">
+		<div class="container-fluid">
+			<div class="row drop-drop">
+				<div class="up-photo-left" ondragover="allowDrop(event)" ondrop="drop(event)"><!--aqui ira la imagen--></div> 
+				<div class="photo-right" ondragover="allowDrop(event)" ondrop="drop(event)"><!--aqui ira la imagen--></div>			
+				<div class="down-photo-left" ondragover="allowDrop(event)" ondrop="drop(event)"><!--aqui ira la imagen--></div>			
+			</div> <!-- fin row -->
+		</div> <!-- fin container -->
+	</section>
+	<!-- seccion de separacion de galerias -->
+	 <section class="container-fluid separator">
+    <p class="text-center midtext">Photo Booth</p>
+  </section>
+	<!-- seccion fotos galeria -->
+	<section id="gellerySection">
+		<div class="container-fluid">
+			<!-- fila 1 -->
+			<div class="row">
+			
+				<div class="col-xs-4 col-md-4 gallery">
+					<img class="img-responsive" id="photo1" src="assets/img/11.jpg" alt="" draggable="true" ondragstart="drag(event)">
+				</div> <!-- fin col -->
+			
+				<div class="col-xs-4 col-md-4 gallery">
+					<img class="img-responsive" id="photo2" src="assets/img/14.jpg" alt="" draggable="true" ondragstart="drag(event)">
+				</div> <!-- fin col -->
+			
+				<div class="col-xs-4 col-md-4 gallery">
+					<img class="img-responsive" id="photo3" src="assets/img/5.jpg" alt="" draggable="true" ondragstart="drag(event)">
+				</div> <!-- fin col -->
+			</div> <!-- fin fila 1 -->
+			<!-- fila 2 -->
+			<div class="row">
+				<div class="col-xs-4 col-md-4 gallery">
+					<img class="img-responsive" id="photo4" src="assets/img/8.jpg" alt="" draggable="true" ondragstart="drag(event)">
+				</div> <!-- fin col -->
+			
+				<div class="col-xs-4 col-md-4 gallery">
+					<img class="img-responsive" id="photo5" src="assets/img/15.jpg" alt="" draggable="true" ondragstart="drag(event)">
+				</div> <!-- fin col -->
+
+				<div class="col-xs-4 col-md-4 gallery">
+					<img class="img-responsive" id="photo6" src="assets/img/3.jpg" alt="" draggable="true" ondragstart="drag(event)">
+				</div> <!-- fin col -->
+			</div> <!-- fin row 2 -->
+		</div> <!-- fin container -->
+	</section>
+	<!-- seccion footer -->
+	 <footer class="navbar-fixed-bottom">
+    <div class="container-fluid row">
+      <div class="col-xs-4">
+        <p class="footer-text text-center text-selected">camera roll <i class="fas fa-chevron-down"></i></p>
+      </div>
+      <div class="col-xs-4">
+        <p class="footer-text text-center">faces</p>
+      </div>
+      <div class="col-xs-4">
+        <p class="footer-text text-center">recents</p>
+      </div>
+    </div>
+  </footer>
+
+	<!-- scripts -->
+	<script src="assets/js/jquery-3.3.1.min.js"></script><!-- primero carga jquery -->
+	<!-- enlace con app.js -->
+	<script src="assets/js/app.js" ></script>
+
+	<script src="assets/js/bootstrap.min.js"></script><!-- luego carga el css -->
+</body>
+</html>
