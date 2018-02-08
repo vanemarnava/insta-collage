@@ -1,10 +1,12 @@
-saveLocaStorage();
-function saveLocaStorage() {
-	let person = {
-		name: "Fernando",
-		edad: 31,
-		correo: "asd@asd.com",
-	}
-	let name = 'juan';
-	localStorage.setItem('name', JSON.stringify(person));
-}
+getLocalStorage();
+		function getLocalStorage() {
+			if(localStorage.getItem('passVal')) {
+				let passVal = localStorage.getItem('passVal');
+				let user = localStorage.getItem('user');
+				$('#userName').append(user);
+			} else {
+				console.log('no hay info guardada');
+			}	
+
+		}
+		
