@@ -41,6 +41,11 @@
   color: #FFF;
 }
 
+#userName {
+  display: inline-block;
+  margin-left: 40px;
+}
+
 /*estilo boton de inicio sesion*/
 #btnSign {
   color: #FFF;
