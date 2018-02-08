@@ -6,12 +6,15 @@
 	box-sizing: border-box;
 }
 
-/*Estilo fondo iniciar seccion*/
+/*
+	ESTILOS DE INICIO SESION
+*/
+/*Estilo fondo iniciar sesion*/
 #init{
 	/*background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);*/
 	width: 100%;
   height: 100vh;
- 	padding-top: 3em;
+ 	padding-top: 2.5em;
   background: -moz-linear-gradient(to bottom left,#60b68a,#cc7b52);
   background: -webkit-linear-gradient(to bottom left,#60b68a, #cc7b52);
   background: -o-linear-gradient(to bottom left,#60b68a, #cc7b52);
@@ -20,7 +23,7 @@
 }
 
 /*estilo inputs*/
-.input-group, #idioma {
+.input-group{
   width: 70%;
 }
 
@@ -64,36 +67,119 @@
   font-weight: 600;
 }
 
+/*estilos parrafos*/
 p {
   font-size: 1em;
   text-align: center;
 }
 
+/*estilo logo face*/
 .logfb {
   font-size: 1.1em;
   font-weight: 600;
 }
 
+/*
+	ESTILOS GALERIA
+*/
 
-
-#drop-photos-section{
-	height: 15em;
-	width: 100%;
-	border: 2px solid red;
+.phone-panel {
+  color: #fff;
+  min-height: auto;
+  border-radius: initial;
+  margin: 0;
 }
 
-.marco-foto {
+/*estilo iconos*/
+.icons-panel {
+  margin: 0em 0.2em;
+}
+
+/*estilo seccion de las imagenes para mover*/
+#cont-drop{
+	background-color: #e0e0e0;
+}
+
+/*estilo contenedor de imagenes donde se arrastran*/
+.drop-drop {
+  height: 25em;
+}
+
+/*estilo foto de la derecha*/
+.photo-right {
+  padding-left: 0.4em;
+  width: 50%;
+  height: 100%;
+  float: right;
+  overflow: hidden;
+}
+
+/*estilo fotos de la izquierda*/
+.up-photo-left, .down-photo-left {
+  width: 50%;
+  height: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/*estilo foto arriba de la derecha*/
+.up-photo-left {
+  padding-bottom: 0.2em; 
+}
+
+/*estilo foto de abajo de la derecha*/
+.down-photo-left {
+  padding-top: 0.2em;
+}
+
+/*estilo del separador de las dos galerias*/
+.separator {
+  height: 2.3em;
+  background-color: #26272B;
+  padding: 0.5em;
+}
+
+/*estilo del texto del separador*/
+.midtext {
+  color: #6097c3;
+  text-transform: uppercase;
+}
+
+/*estilos contenedores de las imagenes para mover*/
+.gallery {
+  background-color: #26272B;
+  padding: 1px;
+  overflow: hidden;
+}
+
+/*estilos imagenes*/
+#photo1, #photo6, #photo2, #photo3, #photo4, #photo5 {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+footer {
+  background-color: #2F3032;
+  height: 4em;
+  padding: .5em 0em;
+}
+
+.footer-text {
+  text-transform: uppercase;
+  color: #AEA9A9;
+  font-size: 1em;
+}
+
+.text-selected {
+  color: #46A4B5;
+}
+
+/*.marco-foto {
   min-height: 15em;
   border: 2px solid black;
-}
+}*/
 
 #gellerySection{
-	height: 5em;
-	width: 100%;
-}
-
-img{
-	height: 13em;
-	width: 15em;
-/*	display: inline;*/
+	background-color: #2F3032;
 }
